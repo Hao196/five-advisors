@@ -4,6 +4,11 @@ description: >
   当用户提出一个观点、方案、选题、决策或商业想法，想从多角度审查、评估、挑毛病、参谋时触发。模拟五位独立顾问（反驳者、本质追问者、机会发现者、外行人、无情执行者）先独立发言，再互相质询，最后由一名主席综合所有观点给出最终结论与行动清单。触发词：审查我的想法、这个方案可行吗、帮我评估、批判、参谋、多维分析、这个选题、这个决策。
 
   Use when the user shares an idea, plan, topic, decision, or business concept and wants it stress-tested from multiple angles. Simulates five independent advisors (Devil's Advocate, First-Principles Questioner, Opportunity Finder, Layman, Ruthless Executor) who review independently, cross-examine each other, then a chairperson synthesizes a final verdict with an action list. Triggers: review/evaluate/critique my idea, is this plan viable, brainstorm review, this topic, this decision, multi-angle analysis.
+version: 1.1.0
+license: MIT
+metadata:
+  author: Hao196
+  platform: cross-agent
 ---
 
 # 五人智囊天团顾问团 | Five-Advisors Brain Trust

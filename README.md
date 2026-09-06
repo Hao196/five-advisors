@@ -1,6 +1,8 @@
 # Five-Advisors Brain Trust
 
-An OpenCode skill that stress-tests your ideas with five independent advisors.
+A standard Agent Skills (agentskills.io) skill that stress-tests your ideas
+with five independent advisors. Works in Codex, Claude Code, Hermes, Gemini
+CLI, OpenCode, and 30+ supporting agents.
 Share a concept, plan, topic, decision, or business idea and get a structured
 multi-angle review: independent opinions first, cross-examination after, and
 a chairman's verdict with an action list at the end.
@@ -38,15 +40,20 @@ commands/five-advisors.md   the /five-advisors command entry point
 
 ## Install
 
-Requires OpenCode. Clone this repo into your skills directory (e.g.
-`~/.config/opencode/skills/`), or copy the folders individually:
+One `SKILL.md`, every platform. Copy (or symlink) it into your agent's skills
+directory, then restart the agent:
 
-```
-opencode/skills/five-advisors/SKILL.md
-opencode/command/five-advisors.md
-```
+| Platform          | Location                                  |
+|-------------------|-------------------------------------------|
+| Codex             | `~/.agents/skills/` or `~/.codex/skills/` |
+| Claude Code       | `~/.claude/skills/`                        |
+| Hermes Agent      | `~/.hermes/skills/`                        |
+| Gemini CLI        | `~/.gemini/skills/`                        |
+| OpenCode          | `~/.config/opencode/skills/`               |
+| Any project       | `.agents/skills/` in the repo          |
 
-Restart OpenCode after installing.
+`commands/five-advisors.md` is an optional OpenCode `/command` shortcut that
+loads the skill and routes your input into the workflow.
 
 ## Usage
 
