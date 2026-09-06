@@ -40,8 +40,16 @@ commands/five-advisors.md   the /five-advisors command entry point
 
 ## Install
 
-One `SKILL.md`, every platform. Copy (or symlink) it into your agent's skills
-directory, then restart the agent:
+One `SKILL.md`, every platform. Quick way — clone and drop it into your
+agent's skills folder:
+
+```
+git clone https://github.com/Hao196/five-advisors.git
+cp -r five-advisors/five-advisors <your-agent's-skills-dir-here>/
+```
+
+Or copy (or symlink) `five-advisors/SKILL.md` into your agent's skills
+directory directly, then restart the agent:
 
 | Platform          | Location                                  |
 |-------------------|-------------------------------------------|
@@ -51,6 +59,11 @@ directory, then restart the agent:
 | Gemini CLI        | `~/.gemini/skills/`                        |
 | OpenCode          | `~/.config/opencode/skills/`               |
 | Any project       | `.agents/skills/` in the repo          |
+
+**No skills loader?** Tools that only read AGENTS.md still work: the repo's
+`AGENTS.md` instructs the agent to read `five-advisors/SKILL.md` and follow its
+workflow when you ask for an idea review. No plugins, no code, nothing to
+convert.
 
 `commands/five-advisors.md` is an optional OpenCode `/command` shortcut that
 loads the skill and routes your input into the workflow.
